@@ -1,0 +1,14 @@
+PROJECT TITLE
+StudyMate AI – Offline-First AI Study Assistant for Snapdragon-Powered HP PCs
+
+ONE-SENTENCE PITCH
+A privacy-first study assistant that locally understands student notes, retrieves answers, creates summaries and practice questions, and is designed for future NPU-accelerated deployment on Snapdragon-powered HP PCs.
+
+GITHUB
+Paste the URL of the GitHub repository containing this project.
+
+SNAPDRAGON LAPTOP
+No
+
+SNAPDRAGON CONFIRMATION
+Do not tick the confirmation box unless you actually own/use a Snapdragon-powered laptop.

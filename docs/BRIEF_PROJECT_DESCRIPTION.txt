@@ -1,0 +1,25 @@
+StudyMate AI – Offline-First AI Study Assistant for Snapdragon-Powered HP PCs
+
+1. Problem
+Students commonly send notes and personal study material to cloud-based AI tools. This creates privacy concerns and makes the experience dependent on connectivity. Students also need several repetitive study functions: question answering, summarization, and practice-question generation.
+
+2. Proposed solution
+StudyMate AI is an offline-first desktop study assistant. A student loads a PDF or text file, and the application locally extracts the content. It can retrieve relevant passages for a question, produce a quick extractive summary, and generate simple practice questions.
+
+3. AI approach
+The working prototype uses local NLP and TF-IDF relevance scoring. This gives a small, transparent baseline that can run without an external API. The architecture is intentionally modular so the retrieval/model layer can be replaced by a compact transformer or embedding model.
+
+4. Snapdragon optimization
+The target deployment is Snapdragon-powered HP PCs. The planned optimization stage is to evaluate a compact model with Qualcomm AI Hub and use an ONNX/Qualcomm execution path where supported to target the Hexagon NPU. This can move more AI inference on-device while preserving the privacy-first design.
+
+5. Innovation and use case
+The innovation is not simply a chatbot. It combines local study-material retrieval, summarization, and practice generation in one privacy-first workflow. The user controls the source material and does not need to upload it to a third-party cloud service.
+
+6. Deployment and accessibility
+The application is a small Python/Streamlit prototype with standard dependencies. It can be packaged as a desktop application in a later stage. The UI is designed for students and requires only a PDF/TXT file and a question.
+
+7. Limitations and future work
+The current prototype uses lightweight extractive NLP rather than a large generative model. Future work will add a compact on-device language/embedding model, benchmark latency and memory on Snapdragon hardware, and optimize the model through Qualcomm AI Hub.
+
+8. Expected impact
+StudyMate AI aims to make private, low-connectivity study assistance practical on AI PCs while providing a clear path from a simple prototype to hardware-accelerated Snapdragon deployment.
